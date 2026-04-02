@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  color: #4a4a4a;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.nav-links a:hover,
+.social-link:hover,
+button:hover {
+  color: #0a66c2;
+}
+
+.fragment-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: darkred;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  flex: 1;
+}
+
+.hero,
+.card {
+  background: #f9f9f9(255,255,255,0.9);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #444;
+}
+
+
+
+.social-link {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 14px;
+  background: #eee;
+  border-radius: 8px;
+}
+
+.footer {
+  margin-top: auto;
+  background: rgba(255,255,255,0.95);
+  text-align: center;
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.92);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(odd):hover {
+  background-color: #dbeafe;
+}
+
+tr:nth-child(even):hover {
+  background-color: #fde68a;
+}
+
+form {
+  background: rgba(255,255,255,0.92);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+nav {
+    display:flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.main-name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.main-role {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.main-contact {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.about-me hr {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.summary-text {
+  font-size: 20px;
+  line-height: 1.9;
+  text-align: justify;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 40px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  .social-icons{
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img{
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover{
+  transform: scale(1.1);
+}
+  .main-name {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin-bottom: 18px;
+}
+
+.main-role {
+  font-size: 17px;
+  color: #6b5b6b;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.main-contact {
+  font-size: 16px;
+  color: #7a6f7a;
+  margin-bottom: 18px;
+}
+
+.summary-text {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.card h2 {
+  font-size: 22px;
+  color: #3d3d3d;
+  margin-bottom: 14px;
+}
+
+.card p,
+.card li {
+  font-size: 17px;
+  color: #555;
+}
+.message-type{
+margin-top:10px;
+margin-bottom:20px;
+}
+
+.message-type label{
+display:block;
+margin-top:6px;
+cursor:pointer;
+}
+.schedule-title{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+table th{
+    font-weight: bold;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+table th{
+    background-color:#e0e0e0;
+    font-weight:bold;
+}
+
+
+table td:first-child{
+    background-color:#e0e0e0;
+    font-weight:600;
+}
+
+
+table tr:first-child{
+    background-color:#e0e0e0;
+}
+
+
+.schedule-title{
+    font-size:28px;
+}
+
+.courses-title{
+    font-size:28px;
+}
+}
